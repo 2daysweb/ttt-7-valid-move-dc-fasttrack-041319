@@ -3,7 +3,7 @@
 
 
 def valid_move(board, index)
-  if((0<=index && index<=8) && (board[index]=="" || board[index]==" " || board[index] == nil))
+  if((0<=index && index<=8) && (board[index]== "" || board[index]==" "  || board[index] == nil))
     return true
   
     
