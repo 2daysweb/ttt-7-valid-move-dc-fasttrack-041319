@@ -3,12 +3,23 @@
 
 
 def valid_move(board, index)
-  if((0<=index<=8) && (board[index]=="" || board[index]==" " || board[index] == NIL))
-    return TRUE
-  end
+  if((0<=index<=8) && (board[index]=="" || board[index]==" " || board[index] == nil))
+    return true
+  
     
     else
-    return FALSE
+    return false
   end
   end
+  
+  def position_taken?(board, index)
+  if(board[index] == "" || board[index] == " " || board[index]=nil)
+    return false
+  
+  
+  else 
+    return true
+  end
+end
+  
 
